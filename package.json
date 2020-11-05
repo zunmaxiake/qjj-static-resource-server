@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "bin": {
+    "qjj-static-resource-server": "bin/qjj-static-resource-server"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "events": "^3.2.0",
+    "handlebars": "^4.7.6",
+    "util": "^0.12.3",
+    "yargs": "^16.1.0",
+    "zlib": "^1.0.5"
+  }
+}
