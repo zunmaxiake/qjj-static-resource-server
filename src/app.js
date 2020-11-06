@@ -2,6 +2,7 @@ const http = require("http");
 const cfg = require("./config/defaultConfig");
 const path = require("path");
 const route = require("./helper/route");
+const openUrl = require("./helper/openUrl");
 
 class Server {
   constructor(conf) {
@@ -16,6 +17,7 @@ class Server {
     server.listen(this.config.port, this.config.hostname, () => {
       const addr = `http://${this.config.hostname}:${this.config.port}`;
       console.log(`server start on ${addr}`);
+      openUrl(addr);
     })
   }
 }
